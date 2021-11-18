@@ -1,0 +1,58 @@
+scalar Date
+
+type Project {
+    id: Int!
+    projectName: String!
+    category: String!
+    priority: String!
+    status: String!
+    startDate: Date
+    endDate: Date
+    budget: Float
+    budgetInDays: Float
+    notes: String
+    projectOwner: Employee
+}
+
+type Employee {
+    id: Int!
+    company: String
+	lastName: String!
+	firstName: String!
+	emailAddress: String
+	jobTitle: String
+	bussinessPhone: String
+	homePhone: String
+	mobilePhone: String
+	faxNumber: String
+	address: String
+	city: String
+	state: String
+	zip: String
+	country: String
+	webPage: String
+	Notes: String
+}
+
+type Task {
+    id: Int!
+    priority: String!
+    status: String!
+    project: Project
+    title: String
+    description: String
+    assignedTo: Employee
+    startDate: Date
+    endDate: Date
+    percentComplete: Float
+    cost: Float
+    costInDays: Float
+}
+
+
+
+type Query {
+    allProjects: [Project]
+    allTasks: [Task]
+    allEmployee: [Employee]
+}
