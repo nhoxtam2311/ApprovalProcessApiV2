@@ -24,4 +24,21 @@ class Task {
 	double percentComplete
 	double cost
 	double costInDays
+	long parent
+}
+
+interface TaskData{
+	long getId()
+	long getProject()
+	String getTitle()
+	String getDescription()
+	long getAssignedTo()
+	String getStartDate()
+	String getEndDate()
+	Priority getPriority()
+	Status getStatus()
+	double getPercentComplete()
+	double getCost()
+	double getCostInDays()
+	long getParent()
 }

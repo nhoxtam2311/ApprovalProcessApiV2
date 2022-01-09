@@ -24,3 +24,17 @@ class Project {
 	double budgetInDays
 	String notes
 }
+
+public interface ProjectData{
+	long getId()
+	String getProjectName()
+	long getOwner()
+	String getCategory()
+	Priority getPriority()
+	Status getStatus()
+	Date getStartDate()
+	Date getEndDate()
+	double getBudget()
+	double getBudgetInDays()
+	String getNotes()
+}

@@ -5,6 +5,9 @@ import javax.persistence.GeneratedValue
 import javax.persistence.GenerationType
 import javax.persistence.Id
 
+import com.iu.approval.api.enums.Priority
+import com.iu.approval.api.enums.Status
+
 @Entity
 class Employee {
 	@Id
@@ -26,4 +29,17 @@ class Employee {
 	String country
 	String webPage
 	String Notes
+}
+
+public interface EmployeeData{
+	long getId()
+	String getFirstName()
+	String getLastName()
+	String getEmailAddress()
+	String getBussinessPhone()
+	String getHomePhone()
+	String getMobilePhone()
+	String getFaxNumber()
+	String getAddress()
+	
 }
