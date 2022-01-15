@@ -18,6 +18,7 @@ class Project {
 	String category
 	Priority priority
 	Status status
+	Date createdDate
 	Date startDate
 	Date endDate
 	double budget
@@ -37,4 +38,5 @@ public interface ProjectData{
 	double getBudget()
 	double getBudgetInDays()
 	String getNotes()
+	Date getCreatedDate()
 }

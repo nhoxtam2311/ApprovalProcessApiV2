@@ -11,5 +11,6 @@ interface TaskRepository extends JpaRepository<Task, Long>{
 	
 	List<Task> findByProject(long project)
 	List<Task> findByParent(long parent)
+	List<Task> findByAssignedTo(long assignedTo)
 }
 
