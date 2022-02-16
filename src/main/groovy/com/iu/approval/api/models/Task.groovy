@@ -17,6 +17,7 @@ class Task {
 	String title
 	String description
 	long assignedTo
+	Date createdDate
 	String startDate
 	String endDate
 	Priority priority
@@ -41,4 +42,5 @@ interface TaskData{
 	double getCost()
 	double getCostInDays()
 	long getParent()
+	Date getCreatedDate()
 }
