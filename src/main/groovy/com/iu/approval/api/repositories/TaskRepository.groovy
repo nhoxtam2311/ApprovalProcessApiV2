@@ -12,7 +12,7 @@ import com.iu.approval.api.models.TaskData
 interface TaskRepository extends JpaRepository<Task, Long>{
 	
 	Page<Task> findByProject(long project,Pageable pageable)
-	List<Task> findByParent(long parent)
-	List<Task> findByAssignedTo(long assignedTo)
+	Page<Task> findByParent(long parent,Pageable pageable)
+	Page<Task> findByAssignedTo(long assignedTo,Pageable pageable)
 }
 
