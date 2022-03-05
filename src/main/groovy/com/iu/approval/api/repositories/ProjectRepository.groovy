@@ -12,4 +12,5 @@ interface ProjectRepository extends JpaRepository<Project, Long>{
 	
 	List<Project> findByStatus(Status status)
 	List<Project> findByOwner(long owner)
+	
 }
