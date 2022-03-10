@@ -15,5 +15,6 @@ interface ProjectRepository extends JpaRepository<Project, Long>{
 	Page<Project> findByStatus(Status status,Pageable pageable)
 	Page<Project> findByOwner(long owner,Pageable pageable)
 	Page<Project> findAll(Pageable pageable)
+	Page<Project> findByCreatedDate(Date createdDate,Pageable pageable)
 	
 }
