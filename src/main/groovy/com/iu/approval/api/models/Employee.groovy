@@ -29,6 +29,7 @@ class Employee {
 	String country
 	String webPage
 	String Notes
+	String userName
 }
 
 public interface EmployeeData{
@@ -41,5 +42,7 @@ public interface EmployeeData{
 	String getMobilePhone()
 	String getFaxNumber()
 	String getAddress()
+	String getUserName()
+	
 	
 }

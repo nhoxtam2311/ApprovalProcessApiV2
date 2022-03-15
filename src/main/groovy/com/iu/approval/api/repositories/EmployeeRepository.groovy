@@ -11,4 +11,5 @@ import com.iu.approval.api.models.EmployeeData
 @RepositoryRestResource(excerptProjection = EmployeeData.class)
 interface EmployeeRepository extends JpaRepository<Employee, Long>{
 	Page<Employee> findAll(Pageable pageable)
+	Page<Employee> findByUserName(String userName,Pageable pageable)
 }
